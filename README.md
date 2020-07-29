@@ -19,4 +19,5 @@
   <li>usb-c port</li>
   <li>power management</li>
   <li>uhd620</li>
+  <li>gpu acceleration</li>
 </ul>
