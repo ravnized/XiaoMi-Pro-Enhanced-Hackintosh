@@ -5,7 +5,7 @@
 <h2>Not Working</h2>
 <ul>
   <li>Sound through speaker</li>
-  <li>Wifi/BT</li>
+  <li>BT</li>
   <li>HDMI Output</li>
   <li>Finger print</li>
   <li>mx250</li>
@@ -20,4 +20,5 @@
   <li>power management</li>
   <li>uhd620</li>
   <li>gpu acceleration</li>
+  <li>WIFI working! speeds not the best cause it needs more working </li>
 </ul>
