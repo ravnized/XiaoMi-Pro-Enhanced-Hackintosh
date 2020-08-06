@@ -21,4 +21,5 @@
   <li>uhd620</li>
   <li>gpu acceleration</li>
   <li>WIFI working! speeds not the best cause it needs more working </li>
+  <li> Sleep </li>
 </ul>
