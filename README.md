@@ -6,7 +6,6 @@
 <ul>
   <li>Sound through speaker</li>
   <li>BT</li>
-  <li>HDMI Output</li>
   <li>Finger print</li>
   <li>mx250</li>
 </ul>
@@ -22,4 +21,5 @@
   <li>gpu acceleration</li>
   <li>WIFI working! speeds not the best cause it needs more working </li>
   <li> Sleep </li>
+  <li>HDMI Output</li>
 </ul>
