@@ -15,7 +15,7 @@
   <li>Battery</li>
   <li>Gesture</li>
   <li>Brightness key</li>
-  <li>usb-c port</li>
+  <li>usb-c ports</li>
   <li>power management</li>
   <li>uhd620</li>
   <li>gpu acceleration</li>
