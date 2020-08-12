@@ -5,8 +5,6 @@
 <h2>Not Working</h2>
 <ul>
   <li>Sound through speaker</li>
-  <li>BT</li>
-  <li>HDMI Output</li>
   <li>Finger print</li>
   <li>mx250</li>
 </ul>
@@ -16,10 +14,12 @@
   <li>Battery</li>
   <li>Gesture</li>
   <li>Brightness key</li>
-  <li>usb-c port</li>
+  <li>usb-c ports</li>
   <li>power management</li>
   <li>uhd620</li>
   <li>gpu acceleration</li>
   <li>WIFI working! speeds not the best cause it needs more working </li>
   <li> Sleep </li>
+  <li>HDMI Output</li>
+  <li>BT</li>
 </ul>
