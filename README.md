@@ -5,7 +5,6 @@
 <h2>Not Working</h2>
 <ul>
   <li>Sound through speaker</li>
-  <li>BT</li>
   <li>Finger print</li>
   <li>mx250</li>
 </ul>
@@ -22,4 +21,5 @@
   <li>WIFI working! speeds not the best cause it needs more working </li>
   <li> Sleep </li>
   <li>HDMI Output</li>
+  <li>BT</li>
 </ul>
