@@ -1,5 +1,5 @@
 # XiaoMi-Pro-Enhanced-Hackintosh
-<h2>WIP | CATALINA ONLY</h2>
+<h2>WIP | OSX 10.13 and Forward</h2>
 <h3>If you want to contribute please make a pull request </h3>
 <h3>Open an issue if you have a problem </h3>
 <hr>
