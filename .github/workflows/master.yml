@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Create Release Folder
-      run: rsync -arv --exclude='.git/' --exclude='.github/' --exclude='.gitignore' ./EFI ./release/release.zip
+      run: rsync -arv --exclude='.git/' --exclude='.github/' --exclude='.gitignore' ./EFI release/release.zip
     - name: File
       run: |
         ls -la
