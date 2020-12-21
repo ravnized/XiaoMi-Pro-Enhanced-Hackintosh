@@ -17,9 +17,7 @@ jobs:
         ls -la
     - name: Generate Prerelease Release Notes
       run: |
-        echo '### Disclaimer:' >> ReleaseNotes.md
-        echo '***This alpha version is for testing only.***' >> ReleaseNotes.md
-        echo 'It is not ready for daily use and we do not guarantee its usability.' >> ReleaseNotes.md
+        echo 'This pre-release version is for testing only.***' >> ReleaseNotes.md
         echo '### The latest five updates are:' >> ReleaseNotes.md
         git log -"5" --format="- %H %s" | sed '/^$/d' >> ReleaseNotes.md
     - name: Manage Version
