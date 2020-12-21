@@ -8,8 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: Zip Folder
+      run: zip -r release.zip EFI -x ".git/*" ".github/*"
+    - name: Release to Github
+      run: echo "Release"
     - name: Create Release Folder
-      run: rsync -arv --exclude='.git/' --exclude='.github/' --exclude='.gitignore' ./EFI release/release.zip
+      run: rsync -arv --exclude='.git/' --exclude='.github/' --exclude='.gitignore' . ./release
     - name: File
       run: |
         ls -la
@@ -17,7 +21,3 @@ jobs:
       run: |
         cd release
         ls -la
-    - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
