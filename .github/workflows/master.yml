@@ -11,10 +11,9 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: '5'
-    - name: Switch to Release Folder
+    - name: Create Release zip
       run: |
         zip -r release.zip EFI
-        ls -la
     - name: Generate Prerelease Release Notes
       run: |
         echo 'This pre-release version is for testing only.***' >> ReleaseNotes.md
