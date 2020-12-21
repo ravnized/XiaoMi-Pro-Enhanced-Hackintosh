@@ -8,12 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Zip Folder
-      run: zip -r /release/release.zip EFI -x ".git/*" ".github/*"
-    - name: File
-      run: |
-        ls -la
+    - name: Create Release Folder
+      run: rsync -arv --exclude='.git/' --exclude='.github/' --exclude='.gitignore' EFI ./release
     - name: Switch to Release Folder
       run: |
         cd release
+        ls -la
+    - name: Zip Folder
+      run: zip -r release.zip .
+    - name: Switch to Release Folder
+      run: |
+        
         ls -la
