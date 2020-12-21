@@ -9,11 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Zip Folder
-      run: zip -r release.zip EFI -x ".git/*" ".github/*"
-    - name: Release to Github
-      run: echo "Release"
-    - name: Create Release Folder
-      run: rsync -arv --exclude='.git/' --exclude='.github/' --exclude='.gitignore' . ./release
+      run: zip -r /release/release.zip EFI -x ".git/*" ".github/*"
     - name: File
       run: |
         ls -la
