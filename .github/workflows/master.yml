@@ -13,10 +13,5 @@ jobs:
     - name: Switch to Release Folder
       run: |
         cd release
-        ls -la
-    - name: Zip Folder
-      run: zip -r release.zip .
-    - name: Switch to Release Folder
-      run: |
-        
+        zip -r release.zip .
         ls -la
