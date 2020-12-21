@@ -9,10 +9,25 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        fetch-depth: '5'
     - name: Switch to Release Folder
       run: |
         zip -r release.zip EFI
         ls -la
+    - name: Generate Prerelease Release Notes
+      run: |
+        echo '### Disclaimer:' >> ReleaseNotes.md
+        echo '***This alpha version is for testing only.***' >> ReleaseNotes.md
+        echo 'It is not ready for daily use and we do not guarantee its usability.' >> ReleaseNotes.md
+        echo '### The latest five updates are:' >> ReleaseNotes.md
+        git log -"5" --format="- %H %s" | sed '/^$/d' >> ReleaseNotes.md
+    - name: Delete Old Prerelease
+      uses: dev-drprasad/delete-tag-and-release@v0.1.2
+      with:
+        tag_name: ${{ env.OLD_PRE_TAG }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -23,6 +38,7 @@ jobs:
         release_name: Pre-Release
         draft: false
         prerelease: true
+        body_path: ReleaseNotes.md
     - name: Upload Release Asset
       id: upload-release-asset
       uses: actions/upload-release-asset@v1
