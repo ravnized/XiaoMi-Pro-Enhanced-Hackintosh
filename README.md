@@ -19,7 +19,7 @@
 </tr>
 <tr>
   <td>AUDIO</td>
-  <td>Realtek ALC256 (layout 57)</td>
+  <td>Realtek ALC256 (layout 69)</td>
 </tr>
 <tr>
   <td>STORAGE</td>
@@ -34,9 +34,6 @@
     <th>Not Working</th>
   </tr>
   <tr>
-    <td>Sound through speaker</td>
-  </tr>
-  <tr>
     <td>Finger print</td>
   </tr>
   <tr>
@@ -47,6 +44,9 @@
 <table>
   <tr>
     <th>Working</th>
+  </tr>
+  <tr>
+    <td>Sound through speaker</td>
   </tr>
   <tr>
     <td>Sound headphones</td>
