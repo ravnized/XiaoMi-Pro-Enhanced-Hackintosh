@@ -97,3 +97,4 @@
 - Thanks to [nekiro](https://github.com/nekiro) for providing the USBMap.kext.
 - Thanks to [Trilis29](https://github.com/Trilis29) for the initial release.
 - Thanks to [Dortania](https://github.com/dortania) for the OpenCore Guide.
+- Thanks to [agassecond](https://github.com/agassecond) for the Custom Layout.
